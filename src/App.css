@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  padding: 40px 0;
+  width: 100%;
+  background-color: brown;
+  background-image: url('https://wallpapercave.com/wp/AIfoGgk.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.menu h3 {
+  color: white;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.form input[type=text]{
+  width: 50%;
+}
+
+.items-form {
+  margin: 0 auto;
+  max-width: 540px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.items-form input[type=text] {
+  width: 48%;
+  height: 30px;
+  margin: 8px 0px;
+  padding-left: 10px;
+}
+
+.items-form input[type=submit] {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(112, 78, 78);
+  cursor: pointer;
+  color: white;
+  border: 0;
+  font-size: 19px;
+}
+
+.side-single {
+  width: 50%;
+  padding: 8px 30px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .items-form input[type=text]{
+    width: 100%;
+  }
+  .side-single {
+    width: 100%;
+  }
+}
